@@ -1,4 +1,6 @@
+#N struct 1009-f float x;
 #N canvas 121 146 1145 339 12;
+#X declare -path list-abs;
 #X obj 45 61 m2chordscale;
 #X obj 45 10 notein;
 #X obj 45 34 pack f f;
@@ -17,6 +19,7 @@
 #X text 478 216 2 scale as list of midi pitches \,;
 #X text 478 298 2024 @reinissance;
 #X text 478 72 requires: https://github.com/pd-externals/list-abs;
+#X obj 242 23 declare -path list-abs;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 0 2 8 0;

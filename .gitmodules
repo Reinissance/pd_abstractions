@@ -1,0 +1,3 @@
+[submodule "list-abs"]
+	path = list-abs
+	url = https://github.com/pd-externals/list-abs
