@@ -22,9 +22,14 @@ SUBMODULE_PATH="/LICENSE.txt
 /list-rdrip.pd
 /list-rdrip-help.pd"
 
+# update the submodule
+git submodule update --init --recursive
+
 # Navigate to the repository directory
 cd $REPO_DIR
 
 # Initialize sparse-checkout and set submodule path
-git sparse-checkout init --cone
-git sparse-checkout set $SUBMODULE_PATH
+git sparse-checkout init --no-cone
+git sparse-checkout set --skip-checks $SUBMODULE_PATH
+
+git sparse-checkout reapply

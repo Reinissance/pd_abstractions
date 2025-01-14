@@ -1,9 +1,8 @@
-#N struct 1006-symarray float x array symbols 1006-sym;
-#N struct 1006-sym symbol name float on;
+#N struct 1004-symarray float x array symbols 1004-sym;
+#N struct 1004-sym symbol name float on;
 #N struct 1005-symarray float x array symbols 1005-sym;
 #N struct 1005-sym symbol name float on;
 #N canvas 510 67 751 470 12;
-#X obj 5 7 hsl 700 535 0 127 0 0 background empty empty -2 -8 0 10 #ffffff #ffffff #ffffff 0 1;
 #X obj 464 273 namecanvas vanillamenuhelp;
 #N canvas 171 346 1110 683 look 0;
 #X msg 80 53 set;
@@ -29,10 +28,8 @@
 #X text 55 249 last;
 #X obj 156 354 print menu_1;
 #X obj 754 305 print menu_2;
-#X obj 549 186 r background;
-#X obj 549 212 t b;
-#X msg 549 238 fold;
-#X text 592 237 close open menu;
+#X msg 294 207 fold;
+#X text 337 206 close open menu;
 #X connect 0 0 11 0;
 #X connect 1 0 11 0;
 #X connect 2 0 11 0;
@@ -51,10 +48,7 @@
 #X connect 15 0 5 0;
 #X connect 17 0 18 0;
 #X connect 19 0 11 0;
-#X connect 23 0 24 0;
-#X connect 24 0 25 0;
-#X connect 25 0 11 0;
-#X connect 25 0 5 0;
+#X connect 23 0 11 0;
 #X restore 540 219 pd look in here;
 #X obj 34 385 r menu_1;
 #X listbox 34 409 20 0 0 0 - - - 0;
@@ -74,7 +68,7 @@
 #X obj 270 30 vsl 8 2 0 127 0 0 menu_1-10_s menu_1-10_r x 3 3 0 4 #d9d9d9 #d9d9d9 #606060 0 0;
 #X obj 270 30 vsl 8 2 1 0 0 1 menu_1_scroll_s menu_1_scroll_r empty 0 -9 0 10 #dcdcdc #dfdfdf #000000 0 0;
 #X obj 270 30 cnv 9 1 1 empty menu_1_scrollIndicator empty 20 12 0 14 #bbbbbb #404040 0;
-#X obj 30 30 vsl 250 30 0 127 0 0 menu_1_s menu_1_r menu_1:content 3 13 0 27 #ffffff #fcfcfc #000000 0 0;
+#X obj 30 30 vsl 250 30 0 127 0 0 menu_1_s menu_1_r menu_1 3 13 0 27 #ffffff #fcfcfc #000000 0 0;
 #X obj 440 30 vsl 8 2 0 127 0 0 menu_2-1_s menu_2-1_r x 3 3 0 4 #d9d9d9 #d9d9d9 #606060 0 0;
 #X obj 440 30 vsl 8 2 0 127 0 0 menu_2-2_s menu_2-2_r x 3 3 0 4 #d9d9d9 #d9d9d9 #606060 0 0;
 #X obj 440 30 vsl 8 2 0 127 0 0 menu_2-3_s menu_2-3_r x 3 3 0 4 #d9d9d9 #d9d9d9 #606060 0 0;
@@ -89,8 +83,8 @@
 #X obj 440 30 cnv 9 1 1 empty menu_2_scrollIndicator empty 20 12 0 14 #bbbbbb #404040 0;
 #X obj 300 30 vsl 150 25 0 127 0 0 menu_2_s menu_2_r menu_2 3 11 0 22 #ffffff #fcfcfc #000000 0 0;
 #X obj 540 168 bng 25 250 50 0 empty empty more_Info 30 12 0 18 #ffffff #000000 #000000;
+#X connect 2 0 3 0;
 #X connect 3 0 4 0;
-#X connect 4 0 5 0;
-#X connect 6 0 7 0;
-#X connect 8 0 6 0;
-#X connect 35 0 2 0;
+#X connect 5 0 6 0;
+#X connect 7 0 5 0;
+#X connect 34 0 1 0;
