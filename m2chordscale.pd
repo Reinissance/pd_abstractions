@@ -1,3 +1,4 @@
+#N struct 1009-f float x;
 #N canvas 0 146 1199 896 12;
 #X declare -path list-abs;
 #X obj 657 274 route 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
@@ -6942,6 +6943,7 @@
 #X connect 41 0 44 0;
 #X connect 44 0 39 0;
 #X connect 44 1 40 0;
+#X connect 44 1 36 0;
 #X connect 44 2 62 0;
 #X connect 46 0 33 0;
 #X connect 47 0 33 0;
