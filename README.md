@@ -1,4 +1,4 @@
-# Some abstractions for plugdata
+# Some abstractions for [plugdata](https://github.com/plugdata-team/plugdata)
 
 ### Content
 
@@ -10,7 +10,7 @@ Uses dynamic patching, so avoid large ranges!
 
 ### Pd-Vanilla compability
 
-- vanillaMenu
+- vanillaMenu (be careful with ui objects covered: in Pd only the object most in the back takes the input action)
 - oncedom
 - doubleLongClick
 
