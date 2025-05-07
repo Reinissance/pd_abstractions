@@ -1,0 +1,11 @@
+#N struct 1007-symarray float x array symbols 1007-sym;
+#N struct 1007-sym symbol name float on;
+#N canvas 827 239 734 565 12;
+#X obj 40 160 gmInst;
+#X text 43 13 select a general MIDI instrument by name;
+#X floatatom 40 396 5 0 0 0 - - - 12;
+#X obj 40 421 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
+#X floatatom 40 102 5 0 0 0 - - - 12;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 0 0;
